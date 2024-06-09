@@ -1,3 +1,31 @@
+
+השיחה נפתחה. 3 הודעות. הודעה אחת שלא נקראה.
+
+דילוג לתוכן
+שימוש ב-Gmail עם קוראי מסך
+1 מתוך 4,260
+(ללא נושא)
+דואר נכנס
+
+נעם גלינסקי
+12:43 ‎(לפני 4 דקות)‎
+efwe
+
+ben shalev
+12:43 ‎(לפני 4 דקות)‎
+https://github.com/benshalev12/ex_2_C_course.git ‫בתאריך יום א׳, 9 ביוני 2024 ב-12:43 מאת נעם גלינסקי <‪noamgal46@gmail.com‬‏>:‬ efwe
+
+נעם גלינסקי
+קבצים מצורפים
+12:47 ‎(לפני 0 דקות)‎
+אני
+
+
+
+‫בתאריך יום א׳, 9 ביוני 2024 ב-12:43 מאת ‪ben shalev‬‏ <‪benshalev12@gmail.com‬‏>:‬
+
+ קובץ מצורף אחד
+  •  נסרקו על ידי Gmail
 #include <stdio.h>
 #define SIZE 5
 #define MAX_WEIGHTS 20
@@ -49,29 +77,20 @@ int main(){
     int ans[SIZE]={0};
     for (int i=0; i<SIZE; i++){
         scanf("%49s", result[i]);
-    }
-    for (int i=0; i<SIZE; i++){
         scanf("%d", &values[i]);
-    }
-    for (int i=0; i<SIZE; i++){
         scanf("%d", &weights[i]);
     }
 
     int maxResult = knapSack(weights, values, ans);
-    printf("Maximum profit: %d\n", maxResult);
-    printf("items that give the maximum profit: [");
-    int min1 =SIZE;
-    for (int i = SIZE-1 ; i >= 0; i--){
+    printf("Maximum value: %d\r", maxResult);
+    printf("\n");
+    printf("Selected items:");
+    for (int i = 0 ; i < SIZE ; i++){
         if (ans[i]){
-            min1 = i;
+            printf(" %s", result[i]);
         }
     }
-    for (int i = SIZE-1 ; i >= 0 ; i--){
-        if (ans[i]){
-            printf("%s", result[i]);
-            if (i > min1)printf(", ");
-        }
-    }
-    printf("]");
     return 0;
 }
+my_Knapsack.c
+מציג את my_Knapsack.c.
