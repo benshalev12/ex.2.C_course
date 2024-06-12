@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define SIZE 5
-#define MAX_WEIGHTS 20hjkfh
+#define MAX_WEIGHTS 20
 
 
 int max(int a, int b){
